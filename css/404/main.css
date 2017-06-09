@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background: #EF5350;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#content #content-centered {
+  width: 100%;
+  height: 100%;
+}
+#content #content-wrap {
+  width: 100%;
+}
+#content #content-wrap .line-0 i {
+  font-size: 125px;
+}
+#content #content-wrap .line-1 {
+  font-size: 35px;
+}
+#content #content-wrap .line-2 {
+  font-size: 35px;
+  font-weight: lighter;
+}
