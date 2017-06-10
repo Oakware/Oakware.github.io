@@ -1,16 +1,22 @@
-@siteColor:  #21C64D;
-@siteColor2: #2671FF;
-@siteBackground: #ECF0F1;
+@site-color:  #21C64D;
+@site-color2: #2671FF;
+@site-background: #ECF0F1;
 
 *, *::before, *::after {
 	box-sizing: border-box;
 }
 
 html {
-	background: @siteBackground;
+	background: @site-background;
 }
 
 body {
     margin: 0;
 	padding: 0;
+}
+
+#header {
+	.brand-logo {
+		padding-left: 20px;
+	}
 }
