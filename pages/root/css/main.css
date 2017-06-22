@@ -7,9 +7,15 @@ html {
   background: #ECF0F1;
 }
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 #header .brand-logo {
-  padding-left: 20px;
+  margin-left: 20px;
+}
+#main {
+  flex: 1 0 auto;
 }

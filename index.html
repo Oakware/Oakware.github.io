@@ -8,15 +8,16 @@
 		<title> Oakware </title>
 		<link rel="icon" href="favicon.png"/>
 
-		<!-- <link rel="stylesheet/less" type="text/css" href="css/root/main.less"/> -->
-		<!-- <script src="libs/js/less.min.js"> </script> -->
-
 		<script src="libs/jquery/jquery.min.js"> </script>
 		<link rel="stylesheet" href="libs/material-icons/material-icons.css"/>
 		<link rel="stylesheet" href="libs/materialize/css/materialize.min.css"/>
 		<script src="libs/materialize/js/materialize.min.js"> </script>
 
+		<!-- <link rel="stylesheet/less" type="text/css" href="pages/root/css/main.less"/> -->
+		<!-- <script src="libs/less/less.min.js"> </script> -->
+
 		<link rel="stylesheet" href="pages/root/css/main.css"/>
+		<script src="js/translator/translator.js"> </script>
 		<script src="pages/root/js/main.js"> </script>
 	</head>
 
@@ -25,25 +26,87 @@
 			<nav class="green">
 				<div class="nav-wrapper">
 					<a class="brand-logo" href="/"> Oakware </a>
-					<a class="button-collapse" href="#" data-activates="mobile-menu">
+					<a class="button-collapse" data-activates="side-menu">
 						<i class="material-icons">menu</i>
 					</a>
 					<ul class="right hide-on-med-and-down">
-						<li> <a class="waves-effect" href="#!"> Projects </a> </li>
-						<li> <a class="waves-effect" href="#!"> About </a> </li>
+						<li> <a class="waves-effect" data-tr-text="projects"> Projects </a> </li>
+						<li> <a class="waves-effect" data-tr-text="about"> About </a> </li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 
-		<aside>
-			<ul id="mobile-menu" class="side-nav">
-				<li> <a href="#!"> Products </a> </li>
-				<li> <a href="#!"> About </a> </li>
+		<aside id="aside">
+			<ul id="side-menu" class="side-nav">
+				<li> <a class="waves-effect" data-tr-text="projects"> Projects </a> </li>
+				<li> <a class="waves-effect" data-tr-text="about"> About </a> </li>
 			</ul>
 		</aside>
 
-		<main> </main>
-		<footer> </footer>
+		<main id="main" class="container">
+			<h1 data-tr-text="projects"> Projects </h1>
+
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"> Graph Builder 2 </div>
+					<p> <i> Current version: 2.1 </i> </p>
+					<p>
+						Program and library for building mathematical graphs
+						and visualizing algorithms wrote with C++ and Qt.
+					</p>
+				</div>
+				<div class="card-action">
+					<a href="https://github.com/Oakware/Graph-Builder-2" target="_blank"> GitHub </a>
+					<a href="https://oakware.github.io/Graph-Builder-2" target="_blank"> GitHub Pages </a>
+					<a href="https://github.com/Oakware/Graph-Builder-2/releases" target="_blank" data-tr-text="download"> Download </a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"> Graph Builder </div>
+					<p> <i> Current version: 1.0 </i> </p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="card-action">
+					<a href="https://github.com/Oakware/Graph-Builder" target="_blank"> GitHub </a>
+					<a href="https://github.com/Oakware/Graph-Builder/releases" target="_blank" data-tr-text="download"> Download </a>
+				</div>
+			</div>
+		</main>
+
+		<footer id="footer" class="page-footer green white-text">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m6">
+						<h5 data-tr-text="foot-links"> Links: </h5>
+						<ul>
+							<li> <a href="https://github.com/Oakware" target="_blank" class="white-text"> GitHub </a> </li>
+						</ul>
+					</div>
+					<div class="col s12 m6">
+						<h5 data-tr-text="language-choose"> Choose your language </h5>
+						<a class="dropdown-button btn green lighten-1 waves-effect waves-light"
+						data-activates="lang-dropdown"
+						data-tr-text="language">
+							Language
+						</a>
+						<ul id="lang-dropdown" class="dropdown-content">
+							<li> <a data-lang="en"> English </a> </li>
+							<li> <a data-lang="uk"> Українська </a> </li>
+							<li> <a data-lang="ru"> Русский </a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					&copy; 2017 Oakware
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

@@ -1,0 +1,47 @@
+{
+    "projects": {
+        "en": "Projects",
+        "uk": "Проекти",
+        "ru": "Проекты"
+    },
+    "about": {
+        "en": "About",
+        "uk": "Довідка",
+		"ru": "Справка"
+    },
+    "download": {
+        "en": "Download",
+		"uk": "Завантажити",
+		"ru": "Скачать"
+    },
+    "foot-links": {
+        "en": "Links:",
+		"uk": "Посилання:",
+		"ru": "Ссылки"
+    },
+    "language-choose": {
+        "en": "Choose your language",
+		"uk": "Виберіть свою мову",
+		"ru": "Выберите свой язык"
+    },
+    "language": {
+        "en": "English",
+		"uk": "Українська",
+		"ru": "Русский"
+    },
+	"404-error": {
+		"en": "404 Error",
+		"uk": "Помилка 404",
+		"ru": "Ошибка 404"
+	},
+	"page-not-found": {
+		"en": "Page not found",
+		"uk": "Сторінка не знайдена",
+		"ru": "Страница не найдена"
+	},
+	"go-back": {
+		"en": "Go back",
+		"uk": "Перейти назад",
+		"ru": "Перейти назад"
+	}
+}

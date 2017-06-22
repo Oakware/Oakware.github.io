@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="red lighten-1 white-text">
 	<head>
 		<base href="/"/>
 		<meta charset="utf-8"/>
@@ -8,26 +8,31 @@
 		<title> Oakware - 404 </title>
 		<link rel="icon" href="favicon.png"/>
 
-		<!-- <link rel="stylesheet/less" type="text/css" href="pages/404/css/main.less"/> -->
-		<!-- <script src="libs/js/less.min.js"> </script> -->
-
 		<script src="libs/jquery/jquery.min.js"> </script>
 		<link rel="stylesheet" href="libs/material-icons/material-icons.css"/>
 		<link rel="stylesheet" href="libs/materialize/css/materialize.min.css"/>
 		<script src="libs/materialize/js/materialize.min.js"> </script>
 
+		<!-- <link rel="stylesheet/less" type="text/css" href="pages/404/css/main.less"/> -->
+		<!-- <script src="libs/less/less.min.js"> </script> -->
+
 		<link rel="stylesheet" href="pages/404/css/main.css"/>
+		<script src="js/translator/translator.js"> </script>
+		<script src="pages/404/js/main.js"> </script>
 	</head>
 
 	<body>
-		<main id="content" class="red lighten-1 white-text">
+		<main id="main">
 			<div id="content-centered" class="valign-wrapper center-align">
 				<div id="content-wrap">
 					<div class="line-0">
 						<i class="material-icons">flash_on</i>
 					</div>
-					<div class="line-1"> 404 Error </div>
-					<div class="line-2"> Page not found </div>
+					<div class="line-1" data-tr-text="404-error"> 404 Error </div>
+					<div class="line-2" data-tr-text="page-not-found"> Page not found </div>
+					<div class="line-3">
+						<a href="/" class="white-text" data-tr-text="go-back"> Go back </a>
+					</div>
 				</div>
 			</div>
 		</main>

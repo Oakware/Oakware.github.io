@@ -7,7 +7,7 @@
 }
 
 html {
-	background: #EF5350;
+	background: @siteBackground;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 	padding: 0;
 }
 
-#content {
+#main {
 	position: fixed;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
@@ -27,18 +27,16 @@ body {
 
 	#content-wrap {
 		width: 100%;
+	}
 
-		.line-0 i {
-			font-size: 125px;
-		}
+	.line-0 i { font-size: 125px; }
+	.line-1   { font-size: 35px; }
+	.line-2   { font-size: 35px; font-weight: lighter; }
+	.line-3   { font-size: 20px; }
 
-		.line-1 {
-			font-size: 35px;
-		}
-
-		.line-2 {
-			font-size: 35px;
-			font-weight: lighter;
-		}
+	@media all and (max-width: 500px) {
+		.line-0 i { font-size: 100px; }
+		.line-1   { font-size: 25px; }
+		.line-2   { font-size: 25px; }
 	}
 }

@@ -7,13 +7,9 @@
   languages = ["en", "uk", "ru"];
 
   $(document).ready(function() {
-    $(".button-collapse").sideNav();
     translator = new Translator(getBrowserLanguage());
-    jQuery.getJSON("js/translator/literals.json", function(dict) {
+    return jQuery.getJSON("js/translator/literals.json", function(dict) {
       return translator.addDictionary(dict, true);
-    });
-    return $("#lang-dropdown a").click(function() {
-      return translator.translate($(this).attr("data-lang"));
     });
   });
 
