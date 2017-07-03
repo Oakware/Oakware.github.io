@@ -17,12 +17,12 @@
     "foot-links": {
         "en": "Links:",
 		"uk": "Посилання:",
-		"ru": "Ссылки"
+		"ru": "Ссылки:"
     },
     "language-choose": {
-        "en": "Choose your language",
-		"uk": "Виберіть свою мову",
-		"ru": "Выберите свой язык"
+        "en": "Change language",
+		"uk": "Змінити мову",
+		"ru": "Изменить язык"
     },
     "language": {
         "en": "English",

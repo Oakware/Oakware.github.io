@@ -3,9 +3,6 @@
 *::after {
   box-sizing: border-box;
 }
-html {
-  background: #ECF0F1;
-}
 body {
   margin: 0;
   padding: 0;
