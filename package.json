@@ -1,0 +1,39 @@
+{
+    "name": "pr",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "ISC",
+    "main": "build.js",
+    "scripts": {
+        "build": "gulp"
+    },
+    "dependencies": {
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^16.1.0",
+        "@types/react-dom": "^16.0.4",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.4",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "coffee-loader": "^0.9.0",
+        "coffeescript": "^2.2.3",
+        "css-loader": "^0.28.11",
+        "fork-ts-checker-webpack-plugin": "^0.4.1",
+        "gulp": "^3.9.1",
+        "gulp-util": "^3.0.8",
+        "less": "^3.0.1",
+        "less-loader": "^4.1.0",
+        "node-sass": "^4.8.3",
+        "sass-loader": "^6.0.7",
+        "style-loader": "^0.20.3",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.2",
+        "ts-loader": "^4.1.0",
+        "typescript": "^2.8.1",
+        "webpack": "^4.2.0"
+    }
+}
