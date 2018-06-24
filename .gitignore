@@ -10,7 +10,7 @@ package-lock.json
 # Bower
 bower_components/
 
-# Idea
+# IntelliJ Idea
 .idea/
 
 # OS files
