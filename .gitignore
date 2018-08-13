@@ -5,7 +5,6 @@ dist/
 # Node
 node_modules/
 .npm/
-package-lock.json
 
 # Bower
 bower_components/

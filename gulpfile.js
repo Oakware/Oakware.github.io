@@ -1,14 +1,11 @@
-const webpack   = require('webpack');
-const config    = require('./webpack.config');
-const gulp      = require('gulp');
-const gutil     = require('gulp-util');
+const config        = require('./config');
+const gulp          = require('gulp');
+const webpackStream = require('webpack-stream');
 
-gulp.task('webpack', function(callback) {
-    webpack(config, function(err, stats) {
-        if(err) throw new gutil.PluginError('webpack', err);
-        gutil.log('[webpack]', stats.toString());
-        callback();
-    });
+gulp.task('webpack', function() {
+    return gulp.src('./src/index/index.jsx')
+        .pipe(webpackStream(config.getWebpackConfig('production')))
+        .pipe(gulp.dest('./build'));
 });
 
-gulp.task('default', ['webpack']);
+gulp.task('default', gulp.parallel('webpack'));

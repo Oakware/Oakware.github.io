@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.scss';
+
+import '../core/core';
+import './index.scss';
 
 export default class App extends React.Component {
     static start() {
@@ -15,3 +17,7 @@ export default class App extends React.Component {
         );
     }
 }
+
+window.addEventListener('load', () => {
+    App.start();
+});
