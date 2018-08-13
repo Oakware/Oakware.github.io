@@ -2,14 +2,10 @@
 build/
 dist/
 
-# Node
+# Node, other
 node_modules/
-.npm/
-
-# Bower
 bower_components/
-
-# IntelliJ Idea
+.npm/
 .idea/
 
 # OS files
