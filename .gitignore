@@ -2,15 +2,10 @@
 build/
 dist/
 
-# Node
+# Node, other
 node_modules/
-.npm/
-package-lock.json
-
-# Bower
 bower_components/
-
-# Idea
+.npm/
 .idea/
 
 # OS files
