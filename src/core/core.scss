@@ -1,3 +1,11 @@
-//$primary: #3db436;
+@import '~bulma/sass/utilities/initial-variables';
 
-@import "~bulma";
+$gap: 64px;
+$tablet: 624px;
+$desktop: 864px + (2 * $gap);
+$widescreen: 1104px + (2 * $gap);
+$fullhd: 1344px + (2 * $gap);
+
+$primary: $green;
+
+@import '~bulma';
